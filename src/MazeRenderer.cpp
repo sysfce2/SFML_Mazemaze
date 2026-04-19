@@ -44,6 +44,7 @@ MazeRenderer::enable() {
     visible  = new int[16] {-1};
     compiled = new bool[chunks_count] {false};
     draw_list = glGenLists(chunks_count);
+    old_hcp = Point2{-1, -1};
 
     set_states();
     on_enable();
